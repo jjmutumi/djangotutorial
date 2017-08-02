@@ -1,0 +1,11 @@
+pip install virtualenv
+virtualenv ~/venv2
+source ~/venv2/bin/activate
+which python
+which pip
+cd ~/workspace/
+django-admin startproject polls
+cd polls/
+python manage.py startapp vote
+edit vote/views.py
+python manage.py runserver
